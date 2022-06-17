@@ -1,8 +1,11 @@
 package com.doordash.doordash;
 
-public class RDSTokenOptions {
-    String region = "us-west-2";
-    String hostname = "rdsmysql.123456789012.us-west-2.rds.amazonaws.com";
+import org.springframework.stereotype.Component;
+
+@Component
+public class RDSConnectionOptions {
+    String region = "us-east-1";
+    String hostname = "db1.cluster-c9xtnsw4bbg7.us-east-1.rds.amazonaws.com";
     int port = 3306;
-    String username = "jane_doe";
+    String username = "admin";
 }
